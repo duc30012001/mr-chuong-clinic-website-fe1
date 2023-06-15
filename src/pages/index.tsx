@@ -12,7 +12,7 @@ export default function Pages() {
     publicStructure,
   ];
   const router = createBrowserRouter(routesConfig);
-  console.log('env', process.env);
+  console.log('env', import.meta.env.VITE_END_POINT);
   return (
     <Suspense fallback={<AppLoader />}>
       <RouterProvider router={router} />;
