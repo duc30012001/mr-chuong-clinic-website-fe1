@@ -1,14 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-type AuthLayoutProps = {
+export type AuthLayoutProps = {
   children: React.ReactElement;
 };
 
-function AuthLayout({ children }: AuthLayoutProps) {
+function AuthLayout() {
   return (
     <div>
       AuthLayout
-      {children}
+      <Outlet />
     </div>
   );
 }

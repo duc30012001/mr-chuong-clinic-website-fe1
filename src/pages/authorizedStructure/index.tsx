@@ -3,9 +3,9 @@ import authorizedRoutesConfig from './routes';
 const AdminLAyout = React.lazy(() => import('@/layouts/AdminLayout'));
 
 const authorizedStructure = {
-  fallbackPath: '/auth/sign-in',
-  routes: authorizedRoutesConfig,
-  element: AdminLAyout,
+  path: '/system',
+  children: authorizedRoutesConfig,
+  element: <AdminLAyout />,
 };
 
 export default authorizedStructure;

@@ -1,14 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-type MainLayoutProps = {
+export type MainLayoutProps = {
   children: React.ReactElement;
 };
 
-function MainLayout({ children }: MainLayoutProps) {
+function MainLayout() {
   return (
     <div>
       MainLayout
-      {children}
+      <Outlet />
     </div>
   );
 }

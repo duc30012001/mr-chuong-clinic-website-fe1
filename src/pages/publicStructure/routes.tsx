@@ -1,6 +1,6 @@
 import React, { lazy } from 'react';
 
-const SignIn = lazy(() => import('@/features/auth/signIn'));
+const Home = lazy(() => import('@/features/home'));
 
 interface AuthRouteConfig {
   path: string;
@@ -10,9 +10,9 @@ interface AuthRouteConfig {
 
 const authRoutesConfig: AuthRouteConfig[] = [
   {
-    path: 'sign-in',
-    element: <SignIn />,
-    title: 'Đăng ký',
+    path: '',
+    element: <Home />,
+    title: 'Trang chủ',
   },
 ];
 

@@ -1,9 +1,5 @@
-import { BrowserRouter } from 'react-router-dom';
+import Pages from './pages';
 
 export default function App() {
-  return (
-    <h1 className="text-3xl font-bold">
-      <BrowserRouter>Nguyễn Việt Đức!</BrowserRouter>
-    </h1>
-  );
+  return <Pages />;
 }

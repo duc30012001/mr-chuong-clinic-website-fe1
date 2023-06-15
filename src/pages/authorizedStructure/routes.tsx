@@ -4,15 +4,15 @@ const User = React.lazy(() => import('@/features/user'));
 
 interface AuthorizedRoutesConfig {
   path: string;
-  element: React.LazyExoticComponent<React.ComponentType<any>>;
+  element: React.ReactElement;
   title: string;
 }
 
 const authorizedRoutesConfig: AuthorizedRoutesConfig[] = [
   {
-    path: '/system/user',
-    element: User,
-    title: 'Đăng ký',
+    path: 'user',
+    element: <User />,
+    title: 'Người dùng',
   },
 ];
 

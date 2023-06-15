@@ -1,14 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-type AdminLayoutProps = {
+export type AdminLayoutProps = {
   children: React.ReactElement;
 };
 
-function AdminLayout({ children }: AdminLayoutProps) {
+function AdminLayout() {
   return (
     <div>
       AdminLayout
-      {children}
+      <Outlet />
     </div>
   );
 }
